@@ -2,7 +2,7 @@
 ![System Architecture](docs/images/zynq_block_design.jpg)
 **Technologies:** FPGA, Vitis HLS, Vivado, Vitis (Embedded SDK), C++, Python, Quantization-Aware Training, Zynq UltraScale+, Embedded Systems, Machine Learning
 
-This repository contains an FPGA implementation of an **LSTM neural network for ECG waveform segmentation**, deployed on a **Xilinx Zynq UltraScale+ (ZCU104)** platform.
+This repository presents an FPGA implementation of an **LSTM neural network for ECG waveform segmentation**, deployed on a **Xilinx Zynq UltraScale+ (ZCU104)** platform.
 
 The project demonstrates the full workflow required to deploy a trained neural network on FPGA hardware, including **model quantization, hardware design using Vitis HLS, system integration on Zynq, and on-board evaluation**.
 
