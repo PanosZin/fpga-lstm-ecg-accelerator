@@ -70,3 +70,18 @@ The bare-metal application running on the Zynq processing system:
 ---
 
 ## Repository Structure
+```cpp_forward_pass/
+Floating-point C++ reference implementation of the LSTM model.
+
+python_qat/
+Quantization-aware training scripts used before hardware deployment.
+
+hls_kernel/
+Vitis HLS implementation of the LSTM accelerator.
+
+fpga_zynq/
+Bare-metal application used to run the accelerator on the Zynq platform.
+
+docs/
+Figures, thesis, presentation, and supporting documentation.
+```
