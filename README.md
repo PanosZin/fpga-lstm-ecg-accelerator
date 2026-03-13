@@ -1,4 +1,5 @@
 # FPGA Implementation of an LSTM Network for ECG Waveform Segmentation
+**Technologies:** FPGA, Vitis HLS, C++, Python, Quantization-Aware Training, Zynq UltraScale+, Embedded Systems, Machine Learning
 
 This repository contains an FPGA implementation of an **LSTM neural network for ECG waveform segmentation**, deployed on a **Xilinx Zynq UltraScale+ (ZCU104)** platform.
 
