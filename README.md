@@ -1,5 +1,5 @@
 # FPGA Implementation of an LSTM Network for ECG Waveform Segmentation
-**Technologies:** FPGA, Vitis HLS, C++, Python, Quantization-Aware Training, Zynq UltraScale+, Embedded Systems, Machine Learning
+**Technologies:** FPGA, Vitis HLS, Vivado, Vitis (Embedded SDK), C++, Python, Quantization-Aware Training, Zynq UltraScale+, Embedded Systems, Machine Learning.
 
 This repository contains an FPGA implementation of an **LSTM neural network for ECG waveform segmentation**, deployed on a **Xilinx Zynq UltraScale+ (ZCU104)** platform.
 
@@ -15,6 +15,14 @@ Electrocardiogram (ECG) waveform segmentation is an important task in biomedical
 
 This project implements an **LSTM-based segmentation model** on FPGA hardware. The work demonstrates how a trained neural network can be deployed as a **streaming hardware accelerator** within an embedded system.
 
+The original model architecture was inspired by the MATLAB example:
+
+ECG Waveform Segmentation Using LSTM Networks  
+https://www.mathworks.com/help/signal/ug/waveform-segmentation-using-deep-learning.html
+
+The MATLAB implementation served as a reference for the network architecture and dataset preparation.  
+The model was subsequently adapted, quantized, and deployed as an FPGA accelerator in this repository.
+
 Such implementations can support **real-time ECG analysis in embedded or wearable biomedical monitoring devices**.
 
 Each ECG sample is classified into one of four classes:
@@ -23,7 +31,6 @@ Each ECG sample is classified into one of four classes:
 - **QRS complex**
 - **T wave**
 - **n/a (background)**
-
 ---
 
 ## System Architecture
@@ -93,19 +100,6 @@ fpga-lstm-ecg-accelerator
 ├── README.md
 └── LICENSE
 ```
-
----
-
-## Model Training Reference
-
-The LSTM architecture used in this project was based on the MATLAB example:
-
-**ECG Waveform Segmentation Using LSTM Networks**
-
-https://www.mathworks.com/help/signal/ug/waveform-segmentation-using-deep-learning.html
-
-The example served as a reference for the network architecture and dataset preparation.  
-The model was subsequently adapted, quantized, and deployed as an FPGA accelerator in this repository.
 
 ---
 
