@@ -101,7 +101,7 @@ The LSTM architecture used in this project was based on the MATLAB example:
 
 **ECG Waveform Segmentation Using LSTM Networks**
 
-https://www.mathworks.com/help/deeplearning/ug/sequence-labeling-using-lstm.html
+https://www.mathworks.com/help/signal/ug/waveform-segmentation-using-deep-learning.html
 
 The example served as a reference for the network architecture and dataset preparation.  
 The model was subsequently adapted, quantized, and deployed as an FPGA accelerator in this repository.
