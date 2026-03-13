@@ -78,8 +78,47 @@ fpga-lstm-ecg-accelerator
 ├── python_qat/         Quantization-aware training scripts used before hardware deployment
 ├── hls_kernel/         Vitis HLS implementation of the LSTM accelerator
 ├── fpga_zynq/          Bare-metal application used to run the accelerator on the Zynq platform
-├── docs/               Figures, thesis, presentation, and supporting documentation
+│
+├── docs/
+│   ├── images/
+│   │   ├── zynq_block_design.jpg
+│   │   ├── dataflow.jpg
+│   │   └── fpga_results.jpg
+│   │
+│   ├── thesis.pdf
+│   ├── presentation.pdf
+│   └── paper.pdf
 │
 ├── README.md
 └── LICENSE
 ```
+
+---
+
+## Model Training Reference
+
+The LSTM architecture used in this project was based on the MATLAB example:
+
+**ECG Waveform Segmentation Using LSTM Networks**
+
+https://www.mathworks.com/help/deeplearning/ug/sequence-labeling-using-lstm.html
+
+The example served as a reference for the network architecture and dataset preparation.  
+The model was subsequently adapted, quantized, and deployed as an FPGA accelerator in this repository.
+
+---
+
+## Documentation
+
+Additional material related to the project is available in the `docs/` directory:
+
+- Master's thesis describing the full system design and implementation
+- project presentation summarizing the architecture and results
+- research paper describing the FPGA implementation
+- FPGA architecture diagrams and execution results
+
+---
+
+## License
+
+This project is released under the MIT License.
