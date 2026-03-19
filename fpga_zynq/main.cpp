@@ -17,7 +17,7 @@
 #include "xtime_l.h"                // XTime_GetTime()
 
  /*---------------------------------------------------------------------------*/
- /* ** DDR buffer base addresses ** */*/
+ /* ** DDR buffer base addresses ** **/
  /*---------------------------------------------------------------------------*/
 #define ECG_BASE_PHYS      0x10000000u      // int8_t  ECG samples
 #define GT_BASE_PHYS       0x20000000u      // uint8_t ground-truth labels
